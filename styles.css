@@ -45,7 +45,7 @@ body{
   max-height: 300px;
 }
 #list , #list ul{
-  list-style-type: none;
+  list-style: none;
   background-color: white;
   border: 1px solid #eee;
   border-radius: 3px;
