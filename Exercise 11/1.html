@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Basic Profile Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- basic styles -->
+    <link rel="stylesheet" href="../basic-styles.css">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="1-large.css">
+  </head>
+  <body>
+      <img src="profile-image.jpg" alt="profile picture">
+      <h2>Yuvraj Sablania</h2>
+      <h3>Frontend Developer</h3>
+
+      <table>
+        <th colspan="2">Contact info</th>
+        <tr>
+          <td>Email</td>
+          <td><a href="mailto:yuvraj09414902016@msi-ggsip.org">yuvraj09414902016@msi-ggsip.org</a></td>
+        </tr>
+        <tr>
+          <td>Website</td>
+          <td><a href="http://yuvrajsab.me">yuvrajsab.me</a></td>
+        </tr>
+        <tr>
+          <td>Twitter</td>
+          <td><a href="#">@yuvrajsab</a></td>
+        </tr>
+        <tr>
+          <td>Github</td>
+          <td><a href="https://github.com/yuvrajsab">yuvrajsab</a></td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td>888-000-000</td>
+        </tr>
+      </table>
+
+      <script>
+        var css = document.getElementsByTagName("link");
+        if(window.screen.width > 768){
+          css[1].href = "1-large.css";
+        }else if(window.screen.width > 375 && window.screen.height > 667){
+          css[1].href = "1-medium.css"
+        }else{
+          css[1].href = "1-small.css";
+        }
+        //console.log(window.screen.width);
+      </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<h3>4. Write a JavaScript function to capitalize the first letter of a string. </h3>
+		
+		<script>
+			function capitalize(str){
+				//var str = "this is a string!";				
+				var first_letter = str.charAt(0).toUpperCase();
+				
+				str = str.replace(str.charAt(0),first_letter);
+				
+				document.write(str);
+			}
+			
+			capitalize("this is a string!");
+		</script>
+	</body>
+</html>

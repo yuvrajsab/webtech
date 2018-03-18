@@ -1,0 +1,15 @@
+<html>
+	<body>
+		<h3>5.	Write a java script program to evaluate the following mathematical Expression 1+2/2!+3/3!+…………+n/n!.</h3>
+		
+		<script>
+			var i,sum=0,fact=1;
+			n = 10;
+			for(i=1;i<=n;i++){
+				fact = fact * i;
+				sum += i/fact;
+			}
+			document.write(sum);
+		</script>
+	</body>
+</html>

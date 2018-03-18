@@ -1,0 +1,23 @@
+<html>
+	<body>
+		<h3>3. Write a JavaScript function to parameterize a string. </h3>
+		
+		<script>
+			function string_parameterize(a){	
+				//var a = "This Is A String As Parameter";
+				var i;
+				
+				for(i=0;i<=a.length;i++){
+					if(a[i]==" "){
+						a = a.replace(" ","-");
+					}
+				}
+				
+				a = a.toLowerCase();
+				document.write(a);
+			}
+			
+			string_parameterize("This Is A String As Parameter!");
+		</script>
+	</body>
+</html>

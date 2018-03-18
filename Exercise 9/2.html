@@ -1,0 +1,22 @@
+<html>
+	<body>
+		<h3>2. Write a JavaScript function to hide email addresses to protect from unauthorized user.</h3>
+		
+		<script>
+			function protect_email(email){
+				//var email = "robin_singh@example.com";
+
+				if(email.search("_") == -1){
+					var first = email.substring(0,5);
+				}else{
+					var first = email.substring(0,email.indexOf("_"));
+				}
+				var last = email.substring(email.indexOf("@"),email.lastIndex);
+				
+				document.write(first+"..."+last);
+			}
+			protect_email("robin_singh@example.com");
+			//protect_email("sablaniayuvraj@gmail.com");
+		</script>
+	</body>
+</html>

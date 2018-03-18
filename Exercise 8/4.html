@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<h3>4. Write a java script program to sort the array (Bubble Sort).</h3>
+		
+		<script>
+			var a = new Array(3,2,6,4,7,3,5,10,1,8);
+			document.write("Original Array : "+a+"<br>");
+			var i,j,temp;
+				for(i=0;i<a.length;i++){
+					for(j=i+1;j<a.length;j++){
+						if(a[i]>a[j]){
+							temp = a[i];
+							a[i] = a[j];
+							a[j] = temp;
+						}
+					}
+				}
+				document.write("Sorted Array : "+a);
+		</script>
+	</body>
+</html>

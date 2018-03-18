@@ -1,0 +1,24 @@
+<html>
+	<body>
+		<h3>10. Write a JavaScript function that reverse a number.<br>
+			<i>&nbsp; Example x = 32243;<br>
+			&nbsp; Expected Output : 34223</i> 
+		</h3>
+		
+		<script>
+			var i,j,rev=0;
+			var a = 32243;
+			var temp;
+			
+			document.write("Actual number: "+a+"<br>");
+			
+			while(a>0){
+				temp = a%10;
+				rev = (rev * 10) + temp;
+				a = Math.floor(a/10);
+			}
+			
+			document.write("Reversed number: "+rev);
+		</script>
+	</body>
+</html>

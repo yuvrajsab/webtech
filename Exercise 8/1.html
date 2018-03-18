@@ -1,0 +1,29 @@
+<html>
+	<!-- Javascript no styles needed -->
+	<body>
+		<h3>1. Write a java script program to perform mathematical operation, where first argument is the operator and rest arguments are operands.</h3>
+		
+		<script>
+			var res;
+			function math(a,b,c){
+				if(a=='+'){
+					res = b+c;
+					document.write("Addition: "+res);
+				}
+				if(a=='-'){
+					res = b-c;
+					document.write("Subtraction: "+res);
+				}
+				if(a=='*'){
+					res = b*c;
+					document.write("Multiplication: "+res);
+				}
+				if(a=='/'){
+					res = b/c;
+					document.write("Division: "+res);
+				}
+			}
+			math('+',50,100);
+		</script>
+	</body>
+</html>

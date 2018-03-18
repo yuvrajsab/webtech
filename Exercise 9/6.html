@@ -1,0 +1,22 @@
+<html>
+	<body>
+		<h3>6. Write a JavaScript function to chop a string into chunks of a given length.</h3>
+		
+		<script>
+			function string_chop(str,b){
+				var a = new Array();
+				//var str = "w3resource";
+				//b=3;
+				for(var i=0;i<str.length;i+=b){
+					a.push(str.substring(i,i+b));
+				}
+				
+				document.write(a+"<br>");
+			}
+			
+			string_chop("w3resource",3);
+			string_chop("w3resource",2);
+			string_chop("w3resource",4);
+		</script>
+	</body>
+</html>

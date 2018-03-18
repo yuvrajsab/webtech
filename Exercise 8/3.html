@@ -1,0 +1,24 @@
+<html>
+	<body>
+		<h3>3. Write a java Script program to print all prime numbers in the given range.</h3>
+		
+		<script>
+			var i,j;
+			function prime(a){
+				document.write("<h3>Prime Numbers till "+a+" are:</h3>");
+				for(i=1;i<=a;i++){
+					c=0;
+					for(j=1;j<=i;j++){
+						if(i%j==0){
+							c++;
+						}
+					}
+					if(c==2){
+						document.write(i+" ");
+					}
+				}
+			}
+			prime(50);
+		</script>
+	</body>
+</html>

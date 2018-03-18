@@ -1,0 +1,44 @@
+/* table */
+td{
+  width: 50%;
+}
+
+tr:nth-child(odd){
+  background-color: #eee;
+}
+tr,td,th{
+  padding: 10px;
+}
+table{
+  border-spacing: 0;
+  margin: auto;
+}
+
+
+/* image */
+img{
+  width: 200px;
+  height: auto;
+}
+
+/* heading */
+h2{
+  line-height: 0;
+}
+
+/* anchor */
+a{
+  text-decoration: none;
+}
+a:link,a:visited{
+  color: #0066FF;
+}
+a:hover{
+  transition: color 200ms ease-in-out;
+  color: black;
+}
+
+/* body */
+body{
+  text-align: center;
+}

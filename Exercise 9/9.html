@@ -1,0 +1,25 @@
+<html>
+	<body>
+		<h3>9. Write a JavaScript function to alphabetize a given string. <br>
+			Alphabetize string : An individual string can be alphabetized. This rearranges the letters so they are sorted A to Z. <br>
+		</h3>
+		
+		<script>
+			//var str = "United States";
+			
+			function alphabetize_string(str){
+				var a = new Array();
+				for(var i=0;i<str.length;i++){
+					a[i] = str[i];
+				}
+				
+				a.sort();
+
+				for(var i=0;i<a.length;i++){
+					document.write(a[i]);
+				}
+			}
+			alphabetize_string("United States");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+	<body>
+		<h3>1. Write a JavaScript function to convert a string in abbreviated form.</h3>
+		
+		<script>
+			function abbreviated(str){
+				//var str = "This Is A String In Str Variable ";
+				document.write("Original String: "+str+"<br>");
+				var a = str.charAt(0);
+				var i;
+				
+				for(i=0;i<=str.length;i++){
+					if(str[i]==" "){
+						a += str.substring(i+1,i+2);
+					}
+				}
+				document.write("Abbreviated String:	"+a);
+			}
+			abbreviated("This Is A String In Str Variable ");
+		</script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+	<body>
+		<p>Input radius value and get the volume of a sphere</p>
+		<script>
+			//labels for inputs
+			var radius_text = document.createTextNode("Radius"); 
+			var volume_text = document.createTextNode("Volume");
+			
+			//input
+			var radius = document.createElement("input");
+			radius.type = "number";
+			var volume = document.createElement("input");
+			volume.readOnly = true;
+			
+			//button
+			var btn = document.createElement("button");
+			btn.innerHTML = "calculate";
+			btn.addEventListener("click",function(){
+				var rval = radius.value;
+				var result = ((4/3) * (3.14 * (rval * rval * rval)));
+				volume.value = result;
+			});
+			
+			
+			document.body.appendChild(radius_text);
+			document.body.appendChild(document.createElement("br")); //linebreak
+			document.body.appendChild(radius);
+			document.body.appendChild(document.createElement("br"));
+			document.body.appendChild(volume_text);
+			document.body.appendChild(document.createElement("br"));
+			document.body.appendChild(volume);
+			document.body.appendChild(document.createElement("br"));
+			document.body.appendChild(btn);
+		</script>
+	</body>
+</html>

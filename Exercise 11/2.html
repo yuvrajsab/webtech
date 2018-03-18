@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Browser Object Model</h2>
+    <h3>1.Screen</h3>
+    <button onclick="getScreen()">getScreenSize</button>
+    <h3>2.Navigator</h3>
+    <button onclick="getApp()">getAppName</button>
+    <h3>3.Location</h3>
+    <button onclick="getHref()">getPageAddress</button>
+    <h3>4.History</h3>
+    <a href="nopage.html">click here to use this button later</a>
+    <button onclick="goForward()">goForward</button>
+
+    <hr>
+
+    <h3>Plugins in WebBrowser</h3>
+    <button onclick="getPlugins()">getBrowserPlugin</button>
+
+    <hr>
+
+    <h3>Part of query string</h3>
+    <button onclick="getString()">getPartsOfQueryString</button>
+
+    <script>
+      function getScreen(){
+        var width = screen.width;
+        var height = screen.height;
+        alert("Screen Width: "+width+"\n"+"Screen Height: "+height);
+      }
+
+      function getApp(){
+        var name = navigator.appName;
+        alert("Name of App: "+name);
+      }
+
+      function getHref(){
+        var loc = window.location.href;
+        alert("This file is located on '"+loc+"'");
+      }
+
+      function goForward(){
+        history.forward();
+      }
+
+      function getPlugins(){
+        var list = "";
+
+        var plugin = navigator.plugins.length;
+        for(var i=0;i<plugin;i++){
+          list += navigator.plugins[i].name + "\n";
+        }
+        alert(list);
+      }
+
+      function getString(){
+        var protocol = window.location.protocol;
+        var host = window.location.host;
+        var path = window.location.pathname;
+
+        alert("Protocol: "+protocol+"\n"+"Host: "+host+"\n"+"Path: "+path);
+      }
+
+    </script>
+  </body>
+</html>

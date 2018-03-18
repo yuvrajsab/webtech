@@ -1,0 +1,26 @@
+<html>
+	<body>
+		<h3>8. Write a JavaScript function to truncate a string to a certain number of words.</h3>
+		
+		<script>
+			function truncate(str,b){
+				var a = new Array();
+				//var str = "The quick brown fox jumps over the lazy dog";
+				var i;
+				var j=1;
+				
+				for(i=0;i<str.length;i++){
+					if(str[i]==" "){
+						a[j] = i;
+						j++;
+					}
+				}
+				
+				var x = str.slice(0,a[b]);	
+				document.write(x);
+			}
+			
+			truncate("The quick brown fox jumps over the lazy dog",5);
+		</script>
+	</body>
+</html>

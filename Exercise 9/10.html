@@ -1,0 +1,31 @@
+<html>
+	<body>
+		<h3>10. Write a JavaScript function to remove the first occurrence of a given 'search string' from a string.</h3>
+	
+		<script>
+			function remove_first_occurrence(str,b){
+				//var str = "The quick brown fox jumps over the lazy dog";
+				str += " ";
+				var x=0;
+				var start=0;
+				var a = new Array();
+				
+				for(var i=0;i<str.length;i++){
+					if(str[i]==" "){
+						a[x] = str.substring(start,i);
+						start = i+1;
+						x++;
+					}
+				}
+				
+				a.splice(a.indexOf(b),1);
+				
+				for(var i=0;i<a.length;i++){
+					document.write(a[i]+" ");
+				}
+			}
+			
+			remove_first_occurrence("The quick brown fox jumps over the lazy dog","the");
+		</script>
+	</body>
+</html>

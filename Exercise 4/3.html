@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../basic-styles.css" />
+
+    <style>
+      img{
+        width: 80px;
+        height: 80px;
+      }
+      table,th,td{
+        border: 1px solid grey;
+      }
+      table{
+        margin: 50px auto;
+      }
+      th,td{
+        padding: 5px;
+      }
+    </style>
+
+  </head>
+  <body>
+      <table>
+        <tr>
+          <td>
+            This is a TD cell
+          </td>
+          <td></td>
+          <th>
+            This is a TH cell
+          </th>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">
+            Text aligned at top
+          </td>
+          <td>
+            Image in TH cell with default alignments --->
+          </td>
+          <th>
+            <img src="image.jpg" />
+          </th>
+        </tr>
+        <tr>
+          <td style="vertical-align: bottom;">
+            Text aligned at bottom
+          </td>
+          <td>
+            Image in TD cell with default alignments --->
+          </td>
+          <td>
+            <img src="image.jpg" />
+          </td>
+        </tr>
+      </table>
+  </body>
+</html>
