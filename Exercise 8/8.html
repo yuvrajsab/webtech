@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<h3>8. Prompt a user for the cost price and selling price of an article and output the profit and loss percentage.</h3>
+		
+		<script>
+			var sell = prompt("Enter selling price");
+			var cost = prompt("Enter cost price");
+			var x = sell - cost;
+				
+			if(x>0){
+				document.write("Profit ");
+			}else{
+				document.write("Loss: ");
+			}
+			
+			var percentage = (x/cost) * 100;
+			document.write(percentage+"%");
+		</script>
+	</body>
+</html>
